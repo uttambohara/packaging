@@ -20,7 +20,7 @@ import { calculateCourierPrices } from "./courier-charge";
  * @result:
  *  [
  * { items: [{ name: 'Product 1', price: 100, weight: 100 }, { name: 'Product 2', price: 50, weight: 100 },], totalWeight: 200, totalPrice: 150, courierPrice: 5 },
- * { items: [{ name: 'Product 3', price: 80, weight: 50 }, { name: 'Product 4', price: 120, weight: 25 }}], totalWeight: 75, totalPrice: 175, courierPrice: 10 }
+ * { items: [{ name: 'Product 3', price: 80, weight: 50 }, { name: 'Product 4', price: 120, weight: 25 }}], totalWeight: 75, totalPrice: 200, courierPrice: 10 }
  * ]
  */
 function divideIntoPackage(selectedProducts: Products) {
