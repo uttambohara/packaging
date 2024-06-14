@@ -16,10 +16,11 @@ import { calculateCourierPrices } from "./courier-charge";
  * ];
  *
  * const packages = divideIntoPackages(selectedProducts);
- * Result:
+ *
+ * @result:
  *  [
  * { items: [{ name: 'Product 1', price: 100, weight: 100 }, { name: 'Product 2', price: 50, weight: 100 },], totalWeight: 200, totalPrice: 150, courierPrice: 5 },
- * { items: [{ name: 'Product 3', price: 80, weight: 150 }, { name: 'Product 4', price: 120, weight: 25 }}], totalWeight: 430, totalPrice: 175, courierPrice: 10 }
+ * { items: [{ name: 'Product 3', price: 80, weight: 50 }, { name: 'Product 4', price: 120, weight: 25 }}], totalWeight: 75, totalPrice: 175, courierPrice: 10 }
  * ]
  */
 function divideIntoPackage(selectedProducts: Products) {
@@ -49,6 +50,7 @@ function divideIntoPackage(selectedProducts: Products) {
    *   { id: 4, name: "Product 4", price: 120, weight: 100 },
    * ]
    * After sorting:
+   * @result
    * [
    *   { id: 4, name: "Product 4", price: 120, weight: 150 }, // Shipping charge: $5
    *   { id: 3, name: "Product 3", price: 80, weight: 180 }, // Shipping charge: $10
